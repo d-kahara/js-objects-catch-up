@@ -9,6 +9,9 @@ ToDo.prototype.markDone = function () {
     alert('You have finished ' + this.task);
 }
 
+ToDo.prototype.finish = function () {
+    return "Whoop! Whoop!"
+}
 //User Interface
 $(document).ready(function () {
     $("form#new-task-form").submit(function (event) {
