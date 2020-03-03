@@ -12,6 +12,12 @@ ToDo.prototype.markDone = function () {
 ToDo.prototype.finish = function () {
     return "Whoop! Whoop!"
 }
+ToDo.prototype.Undo = function () {
+    this.done = false
+    alert('You have not finished ' + this.task);
+
+}
+
 //User Interface
 $(document).ready(function () {
     $("form#new-task-form").submit(function (event) {
@@ -39,3 +45,4 @@ $(document).ready(function () {
 
     });
 });
+
